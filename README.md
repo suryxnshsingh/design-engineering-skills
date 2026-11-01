@@ -1,11 +1,11 @@
-# agent-skills
+# design-engineering-skills
 
-Claude Code skills for design engineering and CI. Every third-party skill here is a **live pointer**: it tells the agent what the tool is, when to use it, and how to fetch the latest upstream at run time. Nothing is vendored, so the agent never works from a stale copy.
+Claude Code skills for design engineering: UI, design systems, diagrams, video, 3D and design files. Every third-party skill here is a **live pointer**: it tells the agent what the tool is, when to use it, and how to fetch the latest upstream at run time. Nothing is vendored, so the agent never works from a stale copy.
 
 ## Install
 
 ```bash
-npx skills add suryxnshsingh/agent-skills -g -y     # user level, all skills
+npx skills add suryxnshsingh/design-engineering-skills -g -y     # user level, all skills
 npx skills update                                    # pull updates later
 ```
 
@@ -26,7 +26,6 @@ Manual: clone this repo and symlink or copy each folder into `~/.claude/skills/`
 | `img2threejs` | Reference image to procedural, animation-ready Three.js |
 | `blender-mcp` | Drive a live Blender through MCP |
 | `penpot` | Read and edit Penpot files through the official Penpot MCP |
-| `jenkins` | Control Jenkins through the official MCP Server plugin, with a one-shot `scripts/register.sh` |
 
 ## How the live pointers work
 
@@ -38,8 +37,8 @@ Checkouts live in `~/.cache/design-skills/`. Large repos use sparse checkout. Ea
 
 ## Needs host setup
 
-`blender-mcp`, `penpot` and `jenkins` talk to a running app and need credentials on your machine. Each SKILL.md lists the exact steps. No secrets are stored in this repo.
+`blender-mcp` and `penpot` talk to a running app and need credentials on your machine. Each SKILL.md lists the exact steps. No secrets are stored in this repo.
 
 ## Upstream credits
 
-impeccable (pbakaus), UI UX Pro Max (nextlevelbuilder), MCP for Blender (ahujasid), img2threejs, video-shotcraft (Vincentwei1021), HyperFrames (heygen-com), Penpot, Remotion skills (remotion-dev), lemo-opuscar (lemomo-ai), diagram-design (cathrynlavery), Jenkins MCP Server plugin (jenkinsci). Each keeps its own licence.
+impeccable (pbakaus), UI UX Pro Max (nextlevelbuilder), MCP for Blender (ahujasid), img2threejs, video-shotcraft (Vincentwei1021), HyperFrames (heygen-com), Penpot, Remotion skills (remotion-dev), lemo-opuscar (lemomo-ai), diagram-design (cathrynlavery). Each keeps its own licence.

@@ -19,8 +19,7 @@ case "$name" in
   remotion)          repo=remotion-dev/skills ;            sparse="" ;;
   lemo-opuscar)      repo=lemomo-ai/lemo-opuscar ;         sparse="" ;;
   diagram-design)    repo=cathrynlavery/diagram-design ;   sparse="" ;;
-  jenkins)           repo=jenkinsci/mcp-server-plugin ;    sparse="" ;;
-  *) echo "unknown skill: $name" >&2; echo "known: impeccable ui-ux-pro-max blender-mcp img2threejs video-shotcraft hyperframes penpot remotion lemo-opuscar diagram-design jenkins" >&2; exit 2 ;;
+  *) echo "unknown skill: $name" >&2; echo "known: impeccable ui-ux-pro-max blender-mcp img2threejs video-shotcraft hyperframes penpot remotion lemo-opuscar diagram-design" >&2; exit 2 ;;
 esac
 
 dir="$cache/$name"
